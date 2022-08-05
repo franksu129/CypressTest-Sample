@@ -2,9 +2,9 @@
     "messages":{
         "enabled": false
     },
-    "html": {
+    "json": {
         "enabled": true,
-        "output": "cypress/cucumber-report/cucumber-report.html"
+        "output": "cypress/cucumber-report/cucumber-report.json"
     },
     "stepDefinitions": [
         "cypress/e2e/[filepath]/**/*.{js,ts}",
