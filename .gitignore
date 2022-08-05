@@ -127,3 +127,4 @@ dist
 .pnp.*
 /cypress/screenshots
 /cypress/cucumber-report
+/cucumber-messages.ndjson
