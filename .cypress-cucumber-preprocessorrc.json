@@ -1,0 +1,14 @@
+{
+    "messages":{
+        "enabled": false
+    },
+    "html": {
+        "enabled": true,
+        "output": "cypress/cucumber-report/cucumber-report.html"
+    },
+    "stepDefinitions": [
+        "cypress/e2e/[filepath]/**/*.{js,ts}",
+        "cypress/e2e/[filepath].{js,ts}",
+        "cypress/support/step_definitions/**/*.{js,ts}"
+    ]
+}

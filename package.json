@@ -2,9 +2,9 @@
   "name": "mycypress",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "open": "cypress open"
+    "open": "cypress open",
+    "cy:run": "cypress run"
   },
   "author": "",
   "license": "ISC",

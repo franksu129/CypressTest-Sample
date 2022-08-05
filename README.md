@@ -1,11 +1,18 @@
 # CypressTest-Sample
 
-1. install
+# step 1 install
+
 ```
 npm i
 ```
 
-2. run
+# step 2 run
+
+## open cypress test UI
 ```
 npm run open
+```
+## run the test and then get report
+```
+npm run cy:run
 ```

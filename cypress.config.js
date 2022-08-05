@@ -1,11 +1,12 @@
+const { addCucumberPreprocessorPlugin } = require("@badeball/cypress-cucumber-preprocessor");
 const { defineConfig } = require("cypress");
 const webpack = require('@cypress/webpack-preprocessor')
-const preprocessor = require("@badeball/cypress-cucumber-preprocessor");
 
 module.exports = defineConfig({
+  video: false,
   e2e: {
     specPattern: "**/*.feature",
-    setupNodeEvents(on, config) {
+    async setupNodeEvents(on, config) {
 
       const options = {
         webpackOptions: {
@@ -29,7 +30,10 @@ module.exports = defineConfig({
       };
 
       on("file:preprocessor", webpack(options));
+  
+      await addCucumberPreprocessorPlugin(on, config);
+
       return config;
-    },
-  },
+    }
+  }
 });
